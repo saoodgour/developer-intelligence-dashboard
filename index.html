@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Developer Intelligence Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="topbar">
+        <div>
+            <h1>DevIntel</h1>
+            <p>Developer Intelligence Dashboard</p>
+        </div>
+        <span class="status">Portfolio Project</span>
+    </header>
+
+    <main class="container">
+        <section class="welcome">
+            <p class="eyebrow">DEVELOPER ANALYTICS</p>
+            <h2>Discover your next great developer.</h2>
+            <p>Explore skills, consistency, collaboration and hackathon performance.</p>
+        </section>
+
+        <section class="stats">
+            <article class="stat-card">
+                <p>Total Developers</p>
+                <h3 id="totalDevelopers">0</h3>
+            </article>
+            <article class="stat-card">
+                <p>Average Score</p>
+                <h3 id="averageScore">0</h3>
+            </article>
+            <article class="stat-card">
+                <p>Top Candidate</p>
+                <h3 id="topCandidate">--</h3>
+            </article>
+        </section>
+        
+<section class="directory">
+    <div class="section-heading">
+        <div>
+            <h2>Developer Directory</h2>
+            <p>Search and compare candidate profiles.</p>
+        </div>
+
+        <input
+            id="searchInput"
+            type="search"
+            placeholder="Search developers..."
+            aria-label="Search developers"
+        >
+
+        <select id="sortSelect" aria-label="Sort developers by score">
+            <option value="default">Default Order</option>
+            <option value="highToLow">Score: High to Low</option>
+            <option value="lowToHigh">Score: Low to High</option>
+        </select>
+    </div>
+
+    <div id="developerList" class="developer-grid"></div>
+    <p id="emptyMessage" hidden>No developers found.</p>
+</section>
+
+
+       
+    </main>
+
+    <footer>
+        Demo dashboard · Scores use illustrative sample data
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
