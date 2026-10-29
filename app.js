@@ -6,7 +6,7 @@ const searchInput = document.getElementById("searchInput");
 const sortSelect = document.getElementById("sortSelect");
 const emptyMessage = document.getElementById("emptyMessage");
 
-fetch("http://localhost:8080/api/developers")
+fetch("https://developer-intelligence-backend-saoodgour.onrender.com/api/developers")
     .then(response => {
         if (!response.ok) {
             throw new Error("Failed to load developers");
